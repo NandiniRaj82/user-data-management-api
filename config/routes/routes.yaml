@@ -1,0 +1,24 @@
+controllers:
+    resource:
+        path: 'C:/xampp/htdocs/my_project3/src/Controller/'
+        namespace: App\Controller
+    type: attribute
+view_users:
+    path: /api/users
+    controller: App\Controller\UserDataController::viewUsers
+    methods: GET
+
+user_data_upload:
+    path: /api/upload
+    controller: App\Controller\UserDataController::uploadData
+    methods: POST
+
+backup_database:
+    path: /api/backup
+    controller: App\Controller\UserDataController::backupDatabase
+    methods: GET
+
+restore_database:
+    path: /api/restore
+    controller: App\Controller\UserDataController::restoreDatabase
+    methods: POST
